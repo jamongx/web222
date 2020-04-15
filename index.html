@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Single Page Template With Flexbox</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div id="wrap">
+  <head>
+    <title>What is TCP</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/dcf-theme.css" />
+  </head>
+  <body>
     <header>
-      <h2><a href="#">Logo</a></h2>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
+      <div class="center">
+        <h1>DCF255 - TCP Protocol</h1>
+      </div>
     </header>
 
-    <section class="home">
-      <div class="background">
-        <h1>Responsive Flexbox Template</h1>
-        <h3>Just make By Yourself</h3>
-        <a href="http://justmakeyourself.tistory.com/" class="btn" target="_blank">lemon candy's blog</a>
+    <nav>
+      <div class="center">
+        <ul>
+          <li><a href="index.html">What is TCP</a></li>
+          <li><a href="format.html">TCP Segment format</a></li>
+          <li><a href="type.html">TCP Segment type</a></li>
+          <li><a href="sequence.html">Message Sequence</a></li>
+          <li><a href="connection.html">Type of Connection</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="bibliography.html">Bibliography</a></li>
+        </ul>
       </div>
-    </section>
-  </div>
-</body>
+    </nav>
+
+    <main>
+      <section class="main center">
+        <!-- Start your code here -->
+        <h2>1. What is Transmission Control Protocol (TCP) protocol?</h2>
+<p>The TCP/IP protocol has been discussed and standardized in the IETF. RFC 793 is the based standard for TCP, but it doesn't include all the details about modern TCP operations.</p>
+  <p>TCP is a transport layer protocol that provides all the features that a general process requires for reliable data transmission through an unstable and unreliable network.</p>
+  <p>It provides addressing for a process (application) in the form of TCP ports and allows devices to use these ports for the purpose of establishing connections between them. It is the most significant feature as a transport layer.</p>
+ <p> When a connection is established between devices, they can exchange data between the devices with flow control and error control mechanisms simultaneously.</p>
+<p>Finally, a process can send data bytes to TCP as a simple stream, and TCP deals with packaging and sending the data as segments.</p>
+ 
+
+
+        <!-- End your code here  -->
+      </section>
+    </main>
+
+    <footer>
+      <div class="center">
+        &copy; 2020 Group No.10, Jaemo Yang, Aima Azhar, Naveed Danish
+      </div>
+    </footer>
+  </body>
 </html>
