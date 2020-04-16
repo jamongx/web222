@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Final Assignment (5&6)</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <a id="Home" href="index.html">Home</a>
+      <a id="Contact" href="contact.html">Contact</a>
+    </div>
+
+    <div class="content">
+      <header>
+        <i class="fab fa-playstation fa-3x"> Jason's Playstation4 Game Shop</i>
+      </header>
+
+      <main>
+        <!-- Make sure you update the value of the table's title when changing row data-->
+        <div id="subtitle">If you are dissatisfied with my services, please let me know.</div>
+        <div id="contactus">
+          <p id="error"></p>
+          <form
+            id="usrMsg"
+            action="https://httpbin.org/post"
+            method="POST"
+            name="usrMsg"
+            onsubmit="return validateForm()"
+          >
+            <label for="fname">First Name: </label>
+            <input
+              id="fname"
+              type="text"
+              name="fname"
+              size="32"
+              maxlength="32"
+              autocomplete="off"
+            /><br /><br />
+
+            <label for="lname">Last Name: </label>
+            <input
+              id="lname"
+              type="text"
+              name="lname"
+              size="32"
+              maxlength="32"
+              autocomplete="off"
+            /><br /><br />
+
+            <label for="email">Email Address: </label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              size="32"
+              maxlength="32"
+              autocomplete="on"
+              placeholder="user@myseneca.ca"
+            /><br /><br />
+
+            <label>City: </label>
+            <input
+              list="city"
+              type="text"
+              name="city"
+              size="32"
+              required
+              maxlength="32"
+              autocomplete="on"
+            /><br /><br />
+            <datalist id="city">
+              <option value="Toronto"> </option>
+              <option value="Ottawa"> </option>
+              <option value="Vancouver"> </option>
+              <option value="Victoria"> </option>
+              <option value="Montreal"> </option>
+              <option value="Quebec City"> </option>
+              <option value="Calgary"> </option>
+              <option value="Edmonton"> </option>
+              <option value="Halifax"> </option>
+            </datalist>
+
+            <label for="address">Address: </label>
+            <input
+              id="address"
+              type="text"
+              name="address"
+              size="32"
+              maxlength="32"
+              autocomplete="off"
+            /><br /><br />
+
+            <label for="phone">Phone: </label>
+            <input
+              id="phone"
+              type="text"
+              name="phone"
+              size="32"
+              maxlength="32"
+              pattern="(\d{3}[.-]|(\d{3}[.-]?)){2}\d{4}"
+              placeholder="123-123-1234"
+            /><br /><br />
+
+            <label for="postal">Postal Code: </label>
+            <input
+              id="postal"
+              type="text"
+              name="postal"
+              size="32"
+              maxlength="32"
+              pattern="^([A-Za-z]\d[A-Za-z][ ]?\d[A-Za-z]\d)"
+              placeholder="A1A 4A4"
+            /><br /><br />
+
+            <input id="bephoned" type="checkbox" name="bephoned" />
+            <label for="bephoned">Would you like to be phoned?</label><br /><br />
+
+            <label for="postal">Contact Purpose: </label><br />
+            <input
+              type="radio"
+              id="question"
+              name="purpose"
+              value="question"
+              onclick="removeInputBox()"
+            />
+            <label for="question">Question</label><br />
+            <input
+              type="radio"
+              id="comment"
+              name="purpose"
+              value="comment"
+              onclick="removeInputBox()"
+            />
+            <label for="comment">Comment</label><br />
+            <input type="radio" id="order" name="purpose" value="order" onclick="addInputBox()" />
+            <label for="order">Order</label><br />
+            <div id="orderNum"></div>
+
+            <input type="hidden" id="myname" name="myname" value="Jaemo Yang" /><br />
+            <input type="submit" value="Submit" /><br /><br />
+          </form>
+
+          <label for="messages">Messages</label><br />
+          <textarea id="messages" rows="5" cols="60" name="comment" form="usrMsg"></textarea><br />
+        </div>
+      </main>
+      <footer>
+        <p class="center">&copy; 2020 Jason' PS4 Game Store</p>
+        <form action="https://formspree.io/mdoljwzw" method="POST">
+          <p>Subscribe to Jason store's newsletter</p>
+          <label for="name">Name </label>
+          <input id="name" type="text" name="name" />
+          <label for="email_2">Email </label>
+          <input id="email_2" type="email" name="_replyto" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </footer>
+    </div>
+    <script src="js/contact.js"></script>
+    <script src="https://kit.fontawesome.com/64016dc444.js" crossorigin="anonymous"></script>
+  </body>
+</html>

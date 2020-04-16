@@ -1,34 +1,49 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Single Page Template With Flexbox</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Final Assignment (5&6)</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <a id="Home" href="index.html">Home</a>
+      <a id="All_Categories" href="#">All Categories</a>
+      <a id="Sports" href="#">Sports</a>
+      <a id="Adventure" href="#">Adventure</a>
+      <a id="Contact" href="contact.html">Contact</a>
+    </div>
 
-<body>
-  <div id="wrap">
-    <header>
-      <h2><a href="#">Logo</a></h2>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="content">
+      <header>
+        <i class="fab fa-playstation fa-3x"> Jason's Playstation4 Game Shop</i>
+      </header>
 
-    <section class="home">
-      <div class="background">
-        <h1>Responsive Flexbox Template</h1>
-        <h3>Just make By Yourself</h3>
-        <a href="http://justmakeyourself.tistory.com/" class="btn" target="_blank">lemon candy's blog</a>
-      </div>
-    </section>
-  </div>
-</body>
+      <main>
+        <!-- Make sure you update the value of the table's title when changing row data-->
+        <div id="subtitle">
+          My shop specializes in sports and adventure games of PS4 but I'm trying to extend to other
+          genre games.<br />
+          You can subscribe the newsletter
+        </div>
+        <div id="games"></div>
+      </main>
+
+      <footer>
+        <p class="center">&copy; 2020 Jason' PS4 Game Store</p>
+        <form action="https://formspree.io/mdoljwzw" method="POST">
+          <p>Subscribe to Jason store's newsletter</p>
+          <label for="name">Name </label>
+          <input id="name" type="text" name="name" />
+          <label for="email">Email </label>
+          <input id="email" type="email" name="_replyto" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </footer>
+    </div>
+
+    <script src="js/items-data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/64016dc444.js" crossorigin="anonymous"></script>
+  </body>
 </html>
