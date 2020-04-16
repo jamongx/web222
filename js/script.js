@@ -43,7 +43,7 @@
     itemToCard: function(item) {
       var div = document.createElement('div');
       var img = document.createElement('img');
-      img.src = 'images/' + item.code.toLowerCase() + '.jpg';
+      img.src = 'img/' + item.code.toLowerCase() + '.jpg';
       img.alt = item.code.toLowerCase() + '.jpg';
       div.appendChild(img);
 
