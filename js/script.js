@@ -46,12 +46,17 @@
       img.src = 'images/' + item.code.toLowerCase() + '.jpg';
       img.alt = item.code.toLowerCase() + '.jpg';
       div.appendChild(img);
+      div.appendChild(document.createElement('br'));
+      div.appendChild(document.createElement('br'));
 
       var title = document.createElement('h3');
+      title.style.fontSize = '120%';
+      title.style.fontWeight = 'bold';
       title.appendChild(document.createTextNode(item.title));
       div.appendChild(title);
 
       var price = document.createElement('h3');
+      price.style.color = 'red';
       price.appendChild(document.createTextNode('CAD($): ' + item.price));
       div.appendChild(price);
 
@@ -59,6 +64,7 @@
       description.style.wordWrap = 100;
       description.appendChild(document.createTextNode(item.description));
       div.appendChild(description);
+      div.appendChild(document.createElement('br'));
       return div;
     },
 
