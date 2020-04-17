@@ -19,15 +19,11 @@ function validateForm() {
     return false;
   }
 
-  errorMsg();
-
   var lname = document.getElementById('lname').value;
   if (lname === '') {
     errorMsg('Last Name must be filled out');
     return false;
   }
-
-  errorMsg();
 
   var email = document.getElementById('email').value;
   if (email === '') {
@@ -35,15 +31,11 @@ function validateForm() {
     return false;
   }
 
-  errorMsg();
-
-  var city = document.getElementById('city').value;
+  var city = document.getElementById('city-choice').value;
   if (city === '') {
     errorMsg('City must be filled out');
     return false;
   }
-
-  errorMsg();
 
   var address = document.getElementById('address').value;
   if (address === '') {
@@ -51,23 +43,17 @@ function validateForm() {
     return false;
   }
 
-  errorMsg();
-
   var phone = document.getElementById('phone').value;
   if (phone === '') {
     errorMsg('Phone number must be filled out');
     return false;
   }
 
-  errorMsg();
-
   var postal = document.getElementById('postal').value;
   if (postal === '') {
     errorMsg('Postal Code must be filled out');
     return false;
   }
-
-  errorMsg();
 
   var question = document.getElementById('question');
   var comment = document.getElementById('comment');
@@ -77,8 +63,6 @@ function validateForm() {
     return false;
   }
 
-  errorMsg();
-
   var messages = document.getElementById('messages').value;
   if (messages === '') {
     errorMsg('Messages must be filled out');
@@ -86,7 +70,6 @@ function validateForm() {
   }
 
   errorMsg();
-
   return true;
 }
 
