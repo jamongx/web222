@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>WEB222 Final Assignment (Responsive Design)</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -31,22 +34,10 @@
             onsubmit="return validateForm()"
           >
             <label for="fname">First Name: </label>
-            <input
-              id="fname"
-              type="text"
-              name="fname"
-              size="32"
-              autocomplete="off"
-            /><br /><br />
+            <input id="fname" type="text" name="fname" size="32" autocomplete="off" /><br /><br />
 
             <label for="lname">Last Name: </label>
-            <input
-              id="lname"
-              type="text"
-              name="lname"
-              size="32"
-              autocomplete="off"
-            /><br /><br />
+            <input id="lname" type="text" name="lname" size="32" autocomplete="off" /><br /><br />
 
             <label for="email">Email Address: </label>
             <input
@@ -137,17 +128,25 @@
           </form>
 
           <label for="messages">Messages</label><br />
-          <textarea id="messages" rows="5" style="width:100%;text-align:center;" name="comment" form="usrMsg"></textarea><br />
+          <textarea
+            id="messages"
+            rows="5"
+            style="width:100%;text-align:left;"
+            name="comment"
+            form="usrMsg"
+          ></textarea
+          ><br />
         </div>
       </main>
-      <footer class="footer">
+      <footer>
         <p>&copy; 2020 Jason' PS4 Game Store</p>
-        <p>Subscribe to Jason store's newsletter</p><br/>
+        <p>Subscribe to Jason store's newsletter</p>
+        <br />
         <form action="https://formspree.io/mdoljwzw" method="POST">
           <label for="name">Name: </label>
-          <input id="name" type="text" name="name" /><br/><br/>
-          <label for="email">Email: </label>
-          <input id="email" type="email" name="_replyto" /><br/><br/>
+          <input id="name" type="text" name="name" /><br /><br />
+          <label for="email_2">Email: </label>
+          <input id="email_2" type="email" name="_replyto" /><br /><br />
           <input type="submit" value="Subscribe" />
         </form>
       </footer>
