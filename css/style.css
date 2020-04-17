@@ -1,97 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
-body {
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-}
-
-.content header {
-  font-family: 'Maven Pro', sans-serif;
-  background-color: #a8e6cf;
-  font-size: 70%;
-  padding: 1.5em;
-}
-
-.content main #subtitle {
-  padding: 1em;
-  background-color: #ffd3b6;
-  font-size: 120%;
-}
-
-.content main #games {
-  display: flex;
-  justify-content: center; /* items are centered along the line */
-  flex-direction: row; /* row direction of the flexible items */
-  flex-wrap: wrap; /* the item has wrap. It makes item wrap in multiple lines */
-  background-color: #dcedc1;
-  padding: 1em;
-}
-
-.content main #games div {
-  padding: 16px;
-  width: 500px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.content main #contactus {
-  background-color: #dcedc1;
-  padding: 1em;
-}
-
-.footer{
-  font-family: 'Maven Pro', sans-serif;
-  background-color: #ffaaa5;
-  padding: 1em;
-  order:4;
-}
-  
-.footer p {
-  /* padding-left:3.125%; */
-  /* 30px ÷ 960px */
-  text-align:left;
-  padding: 1em;
-  font-size: 100%;
-}
-
-/* The side navigation menu */
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-/* Sidebar links */
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
-
-/* Active/current link */
-.sidebar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -101,6 +10,97 @@ div.content {
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
+
+  body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .content header {
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #a8e6cf;
+    font-size: 70%;
+    padding: 1.5em;
+  }
+  
+  .content main #subtitle {
+    padding: 1em;
+    background-color: #ffd3b6;
+    font-size: 120%;
+  }
+  
+  .content main #games {
+    display: flex;
+    justify-content: center; /* items are centered along the line */
+    flex-direction: row; /* row direction of the flexible items */
+    flex-wrap: wrap; /* the item has wrap. It makes item wrap in multiple lines */
+    background-color: #dcedc1;
+    padding: 1em;
+  }
+  
+  .content main #games div {
+    padding: 16px;
+    width: 500px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .content main #contactus {
+    background-color: #dcedc1;
+    padding: 1em;
+  }
+  
+  .footer{
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #ffaaa5;
+    padding: 1em;
+    order:4;
+  }
+    
+  .footer p {
+    /* padding-left:3.125%; */
+    /* 30px ÷ 960px */
+    text-align:left;
+    padding: 1em;
+    font-size: 100%;
+  }
+  
+  /* The side navigation menu */
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -108,5 +108,65 @@ div.content {
   .sidebar a {
     text-align: center;
     float: none;
+  }
+
+  .content header {
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #a8e6cf;
+    font-size: 50%;
+    padding: 1em;
+  }
+  
+  .content main #subtitle {
+    background-color: #ffd3b6;
+    font-size: 120%;
+    line-height: 150%;
+    padding: 1em;
+  }
+  
+  .content main #games {
+    display: flex;
+    justify-content: center; /* items are centered along the line */
+    flex-direction: column; /* row direction of the flexible items */
+    flex-wrap: wrap; /* the item has wrap. It makes item wrap in multiple lines */
+    background-color: #dcedc1;
+    padding: 0.2em;
+  }
+  
+  .content main #games div {
+    /* width: 500px; */
+    /* padding: 16px; */
+    width: 90%;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0.2em;
+    line-height: 130%;
+  }
+
+  .content main #games div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:100%;
+    height:auto;
+  }
+  
+  .content main #contactus {
+    background-color: #dcedc1;
+    padding: 1em;
+  }
+  
+  .footer{
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #ffaaa5;
+    padding: 1em;
+    order:4;
+  }
+    
+  .footer p {
+    /* padding-left:3.125%; */
+    /* 30px ÷ 960px */
+    text-align:left;
+    padding: 1em;
+    font-size: 100%;
   }
 }
