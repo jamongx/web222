@@ -24,7 +24,7 @@ window.itemsData = [
       '2K continues to redefine what’s possible in Sports gaming with NBA 2K20, featuring best in class graphics & gameplay, ground breaking game modes, and unparalleled player control and customization.'
   },
   {
-    code: 'WWE_2K',
+    code: 'WWE_2K20',
     title: 'WWE 2K20',
     category: 'Sports',
     price: 58.99,

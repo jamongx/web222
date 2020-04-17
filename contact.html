@@ -36,7 +36,6 @@
               type="text"
               name="fname"
               size="32"
-              maxlength="32"
               autocomplete="off"
             /><br /><br />
 
@@ -46,7 +45,6 @@
               type="text"
               name="lname"
               size="32"
-              maxlength="32"
               autocomplete="off"
             /><br /><br />
 
@@ -56,7 +54,6 @@
               type="email"
               name="email"
               size="32"
-              maxlength="32"
               autocomplete="on"
               placeholder="user@myseneca.ca"
             /><br /><br />
@@ -68,7 +65,6 @@
               type="text"
               name="city"
               size="32"
-              maxlength="32"
               autocomplete="on"
             /><br /><br />
             <datalist id="city">
@@ -89,7 +85,6 @@
               type="text"
               name="address"
               size="32"
-              maxlength="32"
               autocomplete="off"
             /><br /><br />
 
@@ -99,7 +94,6 @@
               type="text"
               name="phone"
               size="32"
-              maxlength="32"
               pattern="(\d{3}[.-]|(\d{3}[.-]?)){2}\d{4}"
               placeholder="123-123-1234"
             /><br /><br />
@@ -110,7 +104,6 @@
               type="text"
               name="postal"
               size="32"
-              maxlength="32"
               pattern="^([A-Za-z]\d[A-Za-z][ ]?\d[A-Za-z]\d)"
               placeholder="A1A 4A4"
             /><br /><br />
@@ -144,17 +137,17 @@
           </form>
 
           <label for="messages">Messages</label><br />
-          <textarea id="messages" rows="5" cols="60" name="comment" form="usrMsg"></textarea><br />
+          <textarea id="messages" rows="5" style="width:100%;text-align:center;" name="comment" form="usrMsg"></textarea><br /> <-! cols="60" ->
         </div>
       </main>
       <footer class="footer">
-        <p class="center">&copy; 2020 Jason' PS4 Game Store</p>
+        <p>&copy; 2020 Jason' PS4 Game Store</p>
+        <p>Subscribe to Jason store's newsletter</p>
         <form action="https://formspree.io/mdoljwzw" method="POST">
-          <p>Subscribe to Jason store's newsletter</p>
-          <label for="name">Name </label>
-          <input id="name" type="text" name="name" />
-          <label for="email_2">Email </label>
-          <input id="email_2" type="email" name="_replyto" />
+          <label for="name">Name: </label>
+          <input id="name" type="text" name="name" /><br/><br/>
+          <label for="email">Email: </label>
+          <input id="email" type="email" name="_replyto" /><br/><br/>
           <input type="submit" value="Subscribe" />
         </form>
       </footer>
